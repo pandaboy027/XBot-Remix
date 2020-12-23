@@ -37,7 +37,6 @@ async def help(event):
             string += "`" + str(i)
             string += "`\t• "
         await event.reply(f"•{string}•"
-                          "\n╾─────────────────────╼\
-                          \n   __MOD BY__ : ANAK KAMPANG BOT
+                          "\n╾─────────────────────╼")
         await asyncio.sleep(100)
         await event.delete()

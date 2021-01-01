@@ -108,7 +108,7 @@ async def log(log_text):
 @register(outgoing=True, pattern="^.kickme$")
 async def kickme(leave):
     """ Basically it's .kickme command """
-    await leave.edit("Master left the chat 😛")
+    await leave.edit("GC NYA JELEK ASU CABUT AH KIWW 🐨")
     await leave.client.kick_participant(leave.chat_id, 'me')
 
 
@@ -410,7 +410,7 @@ async def _(event):
                     ))
                 except Exception as e:
                     await event.reply(str(e))
-            await event.edit("Invited Successfully")
+            await event.edit("MAAF TERCULIK JING")
         else:
             # https://lonamiwebs.github.io/Telethon/methods/channels/invite_to_channel.html
             for user_id in to_add_users.split(" "):

@@ -984,26 +984,26 @@ async def _(event):
 
         animation_chars = [
 
-            "**SELAMAT ANDA MENJADI ANAK KAMPANG...**",
+            "**MENJADI ANAK KAMPANG...**",
             "**Enabling All Permissions To User...**",
             "**(1) KONTOL GEDE: ☑️**",
             "**(1) KONTOL GEDE: ✅**",
-            "**(2) TICKET KE NERAKA: ☑️**",
-            "**(2) TICKET KE NERAKA: ✅**",
-            "**(3) NGENTOT DENGAN JANDA: ☑️**",
-            "**(3) NGENTOT DENGAN JANDA: ✅**",
-            "**(4) AKSES REDDORZ: ☑️**",
-            "**(4) AKSES REDDORZ: ✅**",
-            "**(5) KEPALA KONTOL: ☑️**",
-            "**(5) KEPALA KONTOL: ✅**",
-            "**(6) SANGEAN: ☑️**",
-            "**(6) SANGEAN: ✅**",
-            "**(7) DASAR ANAK KAMPANG: ☑️**",
-            "**(7) DASAR ANAK KAMPANG: ✅**",
-            "**(8) MUKA LU JELEK ASU:☑️**",
-            "**(9) MUKA LU JELEK ASU:✅**",                  : ✅**",
-            "**SUKES JADI ANAK KAMPANG!!**",
-            "**DASAR ANAK KAMPANGGG!!!**"
+            "**(2) MASUK NERAKA: ☑️**",
+            "**(2) MASUK NERAKA: ✅**",
+            "**(3) DAPAT JANDA: ☑️**",
+            "**(3) DAPAT JANDA: ✅**",
+            "**(4) TUKANG NGENTOT: ☑️**",
+            "**(4) TUKANG NGENTOT: ✅**",
+            "**(5) SANGEAN: ☑️**",
+            "**(5) SANGEAN: ✅**",
+            "**(6) KEPALA KONTOL: ☑️**",
+            "**(6) KEPALA KONTOL: ✅**",
+            "**(7) DASAR JAHANAM: ☑️**",
+            "**(7) DASAR JAHANAM: ✅**",
+            "**(8) MUKA LU JELEK ASU: ☑️**",
+            "**(8) MUKA LU JELEK ASU: ✅**",
+            "**BERHASIL MENJADI ANAK KAMPANG!**",
+            "**DASAR ANAK KAMPANG!!!**"
 
         ]
 
@@ -1013,7 +1013,7 @@ async def _(event):
 
             await event.edit(animation_chars[i % 20])
 
- 
+
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 

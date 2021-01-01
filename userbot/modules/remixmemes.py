@@ -1000,8 +1000,8 @@ async def _(event):
             "**(6) SANGEAN: ✅**",
             "**(7) DASAR ANAK KAMPANG: ☑️**",
             "**(7) DASAR ANAK KAMPANG: ✅**",
-            "**(8) MUKA LU JELEK ASU: ☑️**",
-            "**(9) MUKA LU JELEK ASU:👍😭**",                  : ✅**",
+            "**(8) MUKA LU JELEK ASU:☑️**",
+            "**(9) MUKA LU JELEK ASU:✅**",                  : ✅**",
             "**SUKES JADI ANAK KAMPANG!!**",
             "**DASAR ANAK KAMPANGGG!!!**"
 

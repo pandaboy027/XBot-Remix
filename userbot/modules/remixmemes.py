@@ -978,32 +978,32 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "fadmin":
+    if input_str == "kampang":
 
         await event.edit(input_str)
 
         animation_chars = [
 
-            "**Promoting User As Admin...**",
+            "**SELAMAT ANDA MENJADI ANAK KAMPANG...**",
             "**Enabling All Permissions To User...**",
-            "**(1) Send Messages: ☑️**",
-            "**(1) Send Messages: ✅**",
-            "**(2) Send Media: ☑️**",
-            "**(2) Send Media: ✅**",
-            "**(3) Send Stickers & GIFs: ☑️**",
-            "**(3) Send Stickers & GIFs: ✅**",
-            "**(4) Send Polls: ☑️**",
-            "**(4) Send Polls: ✅**",
-            "**(5) Embed Links: ☑️**",
-            "**(5) Embed Links: ✅**",
-            "**(6) Add Users: ☑️**",
-            "**(6) Add Users: ✅**",
-            "**(7) Pin Messages: ☑️**",
-            "**(7) Pin Messages: ✅**",
-            "**(8) Change Chat Info: ☑️**",
-            "**(8) Change Chat Info: ✅**",
-            "**Permission Granted Successfully**",
-            "**pRoMooTeD SuCcEsSfUlLy**"
+            "**(1) KONTOL GEDE: ☑️**",
+            "**(1) KONTOL GEDE: ✅**",
+            "**(2) TICKET KE NERAKA: ☑️**",
+            "**(2) TICKET KE NERAKA: ✅**",
+            "**(3) NGENTOT DENGAN JANDA: ☑️**",
+            "**(3) NGENTOT DENGAN JANDA: ✅**",
+            "**(4) AKSES REDDORZ: ☑️**",
+            "**(4) AKSES REDDORZ: ✅**",
+            "**(5) KEPALA KONTOL: ☑️**",
+            "**(5) KEPALA KONTOL: ✅**",
+            "**(6) SANGEAN: ☑️**",
+            "**(6) SANGEAN: ✅**",
+            "**(7) DASAR ANAK KAMPANG: ☑️**",
+            "**(7) DASAR ANAK KAMPANG: ✅**",
+            "**(8) MUKA LU JELEK ASU: ☑️**",
+            "**(9) MUKA LU JELEK ASU:👍😭**",                  : ✅**",
+            "**SUKES JADI ANAK KAMPANG!!**",
+            "**DASAR ANAK KAMPANGGG!!!**"
 
         ]
 
@@ -1013,7 +1013,7 @@ async def _(event):
 
             await event.edit(animation_chars[i % 20])
 
-
+ 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 

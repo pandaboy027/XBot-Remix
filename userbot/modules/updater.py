@@ -98,7 +98,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#NOTE \n"
-                "OK XBOT-REMIX Berhasil Di Update")
+                "OK KAMPANG Berhasil Di Update")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -115,18 +115,18 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('`**XBOT** Berhasil Di Update!`')
+    await event.edit('`**KAMPANG** Berhasil Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('`XBOT Di Restart....`')
+    await event.edit('`KAMPANG Di Restart....`')
     await asyncio.sleep(1)
-    await event.edit('`Silahkan Tunggu Beberapa Detik!`')
+    await event.edit('`Silahkan Tunggu TOLOL!`')
     await asyncio.sleep(10)
     await event.delete()
 
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#NOTICE \n"
-            "OK XBOT-REMIX Berhasil Di Update")
+            "OK BOT KAMPANG Berhasil Di Update")
         await asyncio.sleep(10)
         await event.delete()
 
@@ -188,13 +188,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n`🔥XBOT-REMIX🔥\n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
+            f'\n`🐨BOT KAMPANG🐨\n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**UPDATE Terbaru Untuk 🔥XBOT-REMIX🔥 [{ac_br}]:\n\nPERUBAHAN:**\n`{changelog}`'
+        changelog_str = f'**UPDATE Terbaru Untuk 🐨BOT KAMPANG🐨 [{ac_br}]:\n\nPERUBAHAN:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog is too big, view the file to see it.`")
             file = open("output.txt", "w+")

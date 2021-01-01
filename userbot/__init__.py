@@ -176,7 +176,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/099b2bf1c3256847946bf.mp4"
+    "ALIVE_LOGO") or "https://telegra.ph/file/57b5bff10eeeb5110c493.mp4"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -315,7 +315,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```🔥 XBOT-REMIX 🔥\n☠️BERHASIL DIAKTIFKAN☠️```")
+    await bot.send_message(BOTLOG_CHATID, "```🐨BOT KAMPANG🐨\nMENYALA ANJEEENG```")
     return
 
 with bot:
@@ -386,7 +386,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("I'm [XBOT-REMIX](https://github.com/X-Newbie/XBot-Remix) modules helper...\nplease make your own bot, don't use mine 😋")
+                await event.reply("I'm [BOT KAMPANG](https://github.com/Camel07/XBot-Remix) modules helper...\nplease make your own bot, don't use mine 😋")
             else:
                 await event.reply(f"`Hey there {ALIVE_NAME}\n\nI work for you :)`")
 
@@ -400,7 +400,7 @@ with bot:
                 result = builder.article(
                     "Please Use Only With .help Command",
                     text="{}\nTotal loaded Modules: {}\n               \n🖥 **Main Menu** 🖥\n".format(
-                        "🔥XBOT-REMIX🔥 modules helper",
+                        "🐨BOT KAMPANG🐨 modules helper",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -408,19 +408,19 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "🔥XBOT-REMIX🔥 Helper",
+                    "🐨BOT KAMPANG🐨 Helper",
                     text="List of Modules",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    "XBOT-REMIX",
+                    "BOT KAMPANG",
                     text="""You can convert your account to bot and use them. Remember, you can't manage someone else's bot! All installation details are explained from GitHub address below.""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "GitHub Repo",
-                                "https://github.com/X-Newbie/XBot-Remix"),
+                                "https://github.com/Camel07/XBot-Remix"),
                             custom.Button.url(
                                 "Support",
                                 "www.pornhub.com")],

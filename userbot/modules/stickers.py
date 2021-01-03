@@ -24,16 +24,16 @@ from userbot.events import register
 
 
 KANGING_STR = [
-    "Wao.,Bagus Nih...Colong Dulu Yekan..",
-    "Colong Sticker dulu yee kan",
-    "ehh, mantep nih.....aku colong ya...",
-    "Ini Sticker aku colong yaa\nDUARR!",
+    "Wao.,STICKER PELER KU COLONG..",
+    "Maling sticker gpp kan mwaah",
+    "ehh ngentot tikel ny bagos colong ah...",
+    "Ini Sticker aku colong yaa\nDUARR MEMEK",
     "leh ugha ni Sticker\nColong ahh~",
     "Pim Pim Pom!!!\nni Sticker punya aing sekarang hehe",
     "Colong lagi yee kan.....",
-    "COLONG TROSS!!!",
+    "COLONG TROSS NGENTOT!!!",
     "Bolehkah saya colong ni sticker\nau ah colong aja hehe",
-    "Colong Sticker ahh.....",
+    "Colong Sticker NGAPE GA SENENG?.....",
 ]
 
 
@@ -250,8 +250,8 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            "`Sticker Sukses Dibuat!`"
-            f"\n    🔥 **[KLIK DISINI](t.me/addstickers/{packname})** 🔥\nUntuk Menggunakan Sticker",
+            "`Nyolong Sticker SUKSES KONTOL!`"
+            f"\n    🐨 **[KLIK TOLOL](t.me/addstickers/{packname})** 🐨\nBANGGA JADI MALING",
             parse_mode="md",
         )
 

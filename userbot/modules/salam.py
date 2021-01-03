@@ -74,4 +74,4 @@ CMD_HELP.update({
 \n\n`L`\
 \nUsage: Untuk Menjawab Salam."
 \n\n`G`\
-\nUsage: Untuk nyuruh nimbrung anak kontok.")}
+\nUsage: Untuk nyuruh nimbrung anak kontok."})

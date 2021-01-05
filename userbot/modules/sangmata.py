@@ -33,7 +33,7 @@ async def lastname(steal):
     if message.sender.bot:
         await steal.edit("```Reply to actual users message.```")
         return
-    await steal.edit("```Sit tight while I steal some data from NASA```")
+    await steal.edit("```Membongkar identas asli anak dajjal```")
     try:
         async with bot.conversation(chat) as conv:
             try:

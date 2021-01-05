@@ -32,8 +32,7 @@ async def lastname(steal):
     id = f"/search_id {user_id}"
     if message.sender.bot:
         await steal.edit("```Reply to actual users message.```")
-        return
-    await steal.edit("```Membongkar identas asli anak kontoll```")
+        
     try:
         async with bot.conversation(chat) as conv:
             try:

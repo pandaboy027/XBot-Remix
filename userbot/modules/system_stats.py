@@ -165,13 +165,13 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "`╭━━━━━━━━━━━━━━━━━━━━╮\n "
-            "` Userbot Version: \n "
+            "`╭►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╮\n "
+            "` Bot-Kampang🐨 Version: \n "
             f"{verout}"
             "` \n"
             "   Revision: "
             f"{revout}🇲🇨\n"
-            "╰━━━━━━━━━━━━━━━━━━━━╯ "
+            "╰►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╯ "
         )
     else:
         await event.edit(
@@ -232,18 +232,18 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f"۝⩵꙰ཱི►XBOT-REMIX◄⩵꙰ཱི۝\n running on 🤖 `{UPSTREAM_REPO_BRANCH}` 🤖\n"
-        f"╭━━━━━━━━━━━━━━━━━━━━━╮\n"
-        f"┣[•👤 `USER     :`{DEFAULTUSER}\n"
-        f"┣[ 👁‍🗨 `Username :`@{user.username}\n"
-        "`┣▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱`\n"
-        f"┣[•⚙️ `Telethon :`v {version.__version__} 🔥\n"
-        f"┣[•🐍 `Python   :`v {python_version()} 🔥\n"
-        f"┣[•💻 `Base on  :`{UPSTREAM_REPO_BRANCH}🔥\n"
-        f"┣[•🛠 `Version  :`{BOT_VER} 🔥\n"
-        f"┣[•🗃 `Modules  :`{len(modules)} Loaded🔥\n"
-        f"┣[•🕒 `Uptime   :`{uptime} 🔥\n"
-        f"╰━━━━━━━━━━━━━━━━━━━━━╯\n"
+        f"ᭃ᭄ཱི►ʙᴏᴛ-ᴋᴀᴍᴘᴀɴɢ᭄ᭅᬷ◄᭄ᭅᬷ\n running on 👾 `{UPSTREAM_REPO_BRANCH}` 👾\n"
+        f"╭►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╮\n"
+        f"┣[•🐨 `USER     :`{DEFAULTUSER}\n"
+        f"┣[ 🧿 `Username :`@{user.username}\n"
+        "`┣┈┅┈┅┈┅┈┅┈┅┈┈┅┈┅┈┅┈┅┈┅┈`\n"
+        f"┣[•🌐 `Telethon :`v {version.__version__} 🐨\n"
+        f"┣[•🐍 `Python   :`v {python_version()} 🐨\n"
+        f"┣[•💽 `Base on  :`{UPSTREAM_REPO_BRANCH}🐨\n"
+        f"┣[•⚔️ `Version  :`{BOT_VER} 🐨\n"
+        f"┣[•📖 `Modules  :`{len(modules)} Loaded🐨\n"
+        f"┣[•⏳ `Uptime   :`{uptime} 🐨\n"
+        f"╰►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╯\n"
         f" •MOD BY : `{DEFAULTUSER}`")
     if ALIVE_LOGO:
         try:

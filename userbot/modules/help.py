@@ -35,8 +35,10 @@ async def help(event):
         string = ""
         for i in CMD_HELP:
             string += "`" + str(i)
-            string += "`\t• "
-        await event.reply(f"•{string}•"
-                          "\n╾─────────────────────╼")
-        await asyncio.sleep(100)
+            string += "`\t✪ "
+          await event.edit("**✪ Daftar Module Untuk\BOT KAMPANG🐨:\n\n**"
+                         f"✪{string}✪"
+                          "\nʕ≧ᴥ≦ʔʕ≧ᴥ≦ʔʕ≧ᴥ≦ʔ")
+        await event.reply(f"\n**Ketik Contoh** `.help afk` **Untuk Informasi Module**")
+        await asyncio.sleep(1000)
         await event.delete()

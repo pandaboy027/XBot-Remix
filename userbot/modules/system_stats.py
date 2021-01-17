@@ -233,7 +233,7 @@ async def amireallyalive(alive):
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
         f"ᭃ᭄ཱི►ʙᴏᴛ-ᴋᴀᴍᴘᴀɴɢ᭄ᭅᬷ◄᭄ᭅᬷ\n running on 👾 `{UPSTREAM_REPO_BRANCH}` 👾\n"
-        f"╭►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╮\n"
+        f"╭▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄╮\n"
         f"┣[•🐨 `USER     :`{DEFAULTUSER}\n"
         f"┣[ 🧿 `Username :`@{user.username}\n"
         "`┣┈┅┈┅┈┅┈┅┈┅┈┈┅┈┅┈┅┈┅┈┅`\n"
@@ -243,7 +243,7 @@ async def amireallyalive(alive):
         f"┣[•⚔️ `Version  :`{BOT_VER} 🐨\n"
         f"┣[•📖 `Modules  :`{len(modules)} Loaded🐨\n"
         f"┣[•⏳ `Uptime   :`{uptime} 🐨\n"
-        f"╰►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╯\n"
+        f"╰▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄╯\n"
         f" •MOD BY : `{DEFAULTUSER}`")
     if ALIVE_LOGO:
         try:

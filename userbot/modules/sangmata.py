@@ -17,16 +17,16 @@ async def lastname(steal):
     if steal.fwd_from:
         return
     if not steal.reply_to_msg_id:
-        await steal.edit("```Mohon Balas Ke Pesan Pengguna Lord.```")
+        await steal.edit("```Mohon Balas Ke Pesan Pengguna Tololl.```")
         return
     message = await steal.get_reply_message()
     chat = "@SangMataInfo_bot"
     user_id = message.sender.id
     id = f"/search_id {user_id}"
     if message.sender.bot:
-        await steal.edit("```Balas Ke Pesan Pengguna Yang Sebenarnya.```")
+        await steal.edit("```Balas Ke Pesan Pengguna Yang Ngentott.```")
         return
-    await steal.edit("```Lu Siapa Si Ngentot? Intip Sikit Boleh Ya Cayank ツ```")
+    await steal.edit("```Lu Siapa Si Ngentot? Intip Sikit Boleh Ya Cayank 🐨```")
     try:
         async with bot.conversation(chat) as conv:
             try:
@@ -35,7 +35,7 @@ async def lastname(steal):
                 response = await conv.get_response()
             except YouBlockedUserError:
                 await steal.reply(
-                    "```Lord Mohon Unblock @sangmatainfo_bot Dan Coba Lagi```"
+                    "```Unblock @sangmatainfo_bot Tolol...```"
                 )
                 return
             if r.text.startswith("Name"):
@@ -48,7 +48,7 @@ async def lastname(steal):
             if response.text.startswith("No records") or r.text.startswith(
                 "No records"
             ):
-                await steal.edit("```Saya Tidak Menemukan Informasi Pergantian Nama, Lord Orang Ini Belum Pernah Mengganti Namanya ツ```")
+                await steal.edit("```Saya Tidak Menemukan Informasi Pergantian Nama, Gaperna Ganti Nama Ni Orang ツ```")
                 await steal.client.delete_messages(
                     conv.chat_id, [msg.id, r.id, response.id]
                 )
@@ -60,7 +60,7 @@ async def lastname(steal):
                 conv.chat_id, [msg.id, r.id, response.id, respond.id]
             )
     except TimeoutError:
-        return await steal.edit("`Saya Sedang Sakit Lord Maaf`")
+        return await steal.edit("`Saya Sedang Kena Corona 😭`")
 
 
 CMD_HELP.update({

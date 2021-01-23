@@ -65,23 +65,23 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Shutdown *XBOT-REMIX*....`")
+    await event.edit("`Shutdown *BOT KAMPANG 🐨*....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "Bot dimatikan!!")
+                                        "Bot Has Been Slain!!")
     await bot.disconnect()
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting XBOT-REMIX....`")
+    await event.edit("`Restarting BOT KAMPANG🐨....`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTART \n"
-                                        "Bot di Restart!")
+                                        "Bot Meninggoy!")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "╭━━━━━━━━𖠄━━━━━━━━╮\n \n[┣━─━─[ XBOT-REMIX ]─━─━┫](https://github.com/X-Newbie/XBot-Remix) \n \n╰━━━━━━━━𖠄━━━━━━━━╯\n     \n"
+        "╭••••••••𖠄••••••••╮\n \n[┣━•━─[ B🐨T°KAMPANG ]─━•━┫](https://github.com/Camel07/XBot-Remix) \n \n╰••••••••𖠄••••••••╯\n     \n"
     )
 
 

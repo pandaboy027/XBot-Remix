@@ -464,19 +464,19 @@ async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in (
             "/", "#", "@", "!"):
         await event.edit("Alvin Pedofil({})")
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(0.5)
         await event.edit("Jamal Doyan Ngewe(_)(_)=D")
-        await asyncio.sleep(0.2)
+        await asyncio.sleep(0.5)
         await event.edit("Ibal Gay💩")
         await asyncio.sleep(0.5)
         await event.edit("Rizz Cabul👉👌 ")
-        await asyncio.sleep(0.2)
+        await asyncio.sleep(0.5)
         await event.edit("Roif Stres🤪")
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(0.5)
         await event.edit("Fiersa Gigolo💦")
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(0.5)
         await event.edit("Koala cakep no debat🐨")
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(0.5)
         await event.edit("KALIAN SEMUA KONTOLL... 🔥")
 
 

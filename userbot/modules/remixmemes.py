@@ -459,25 +459,25 @@ async def _(event):
             await event.edit(animation_chars[i % 24])
 
 
-@register(outgoing=True, pattern="^.gangstar(?: |$)(.*)")
+@register(outgoing=True, pattern="^.ngewe(?: |$)(.*)")
 async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in (
             "/", "#", "@", "!"):
-        await event.edit("EVERyBOdy")
+        await event.edit("👉 👌")
         await asyncio.sleep(0.3)
-        await event.edit("wAs")
+        await event.edit("👉👌")
         await asyncio.sleep(0.2)
-        await event.edit("GanGeSTar")
+        await event.edit("👉 👌")
         await asyncio.sleep(0.5)
-        await event.edit("UNtIL ")
+        await event.edit("👉👌 ")
         await asyncio.sleep(0.2)
-        await event.edit("I")
+        await event.edit("👉💦👌")
         await asyncio.sleep(0.3)
-        await event.edit("ArRivEd")
+        await event.edit("👉 💦👌")
         await asyncio.sleep(0.3)
-        await event.edit("😎😎😎")
+        await event.edit("👉💦💦")
         await asyncio.sleep(0.3)
-        await event.edit("EVERyBOdy wAs GanGeSTar UNtIL I ArRivEd 😎😎😎")
+        await event.edit("👉 CROOOTTT 💦💦💦")
 
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
@@ -3025,8 +3025,8 @@ CMD_HELP.update({
 \nUsage: see it yourself 🤐🤐.\
 \n\n`.isro`\
 \nUsage: For calling aliens 👽👽 :P\
-\n\n`.gangstar`\
-\nUsage:U becum gengstar 🤠🤠.\
+\n\n`.ngewe`\
+\nUsage:Ngewe terosss.\
 \n\n`.hack`\
 \nUsage: For hacking telegram🖥️🖥️.\
 \n\n`.dump`\

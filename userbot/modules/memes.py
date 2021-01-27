@@ -649,7 +649,7 @@ SLAP_TEMPLATES_ID = [
     "Melemparkan {item} {where} {victim}.",
     "Meletakan {item} {where} {victim}.",
     "Menyerang {victim} menggunakan {anime}.",
-    "Mengehack Seluruh akun {victim}"
+    "Mengocok kontol {victim}"
 ]
 
 ITEMS_ID = [
@@ -731,12 +731,12 @@ ITEMS_Jutsu = [
 
 THROW_Jutsu = [
     "Futon Rasen Shuriken",
-    "Shuriken",
+    "Chidorii kontoll",
 ]
 
 HIT_Jutsu = [
-    "Rasengan",
-    "Chidori",
+    "CROTTT NO JUTSUU",
+    "KEKUATAN PELER",
 ]
 
 GAMBAR_TITIT = """

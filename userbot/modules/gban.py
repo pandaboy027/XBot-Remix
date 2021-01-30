@@ -20,8 +20,9 @@ from telethon.events import ChatAction
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from telethon.tl.types import MessageEntityMentionName
 
-from userbot import CMD_HELP, bot
-from userbot.utils import admin_cmd
+from userbot.events import register
+from userbot import CMD_HELP, bot, G_BAN_LOGGER_GROUP, ALIVE_NAME
+# imported from uniborg by @heyworld
 
 client = bot
 

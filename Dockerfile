@@ -10,6 +10,6 @@ RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
 
 #Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/X-Newbie/XBot-Remix/x-sql-extended/requirements.txt
+RUN pip3 install -r https://raw.githubusercontent.com/Camel07/XBot-Remix/x-sql-extended/requirements.txt
 
 CMD ["python3","-m","userbot"]

@@ -6,6 +6,7 @@ FROM xnewbie/docker:groovy
 #
 RUN git clone -b x-sql-extended https://github.com/Camel07/XBot-Remix /root/userbot
 RUN mkdir /root/userbot/.bin
+RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
 
 #Install python requirements

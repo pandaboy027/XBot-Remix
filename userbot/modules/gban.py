@@ -67,7 +67,7 @@ async def get_user_from_id(user, event):
     return user_obj
 
 
-@telebot.on(ChatAction)
+@register(ChatAction)
 async def handler(tele):
     if tele.user_joined or tele.user_added:
         try:
@@ -97,7 +97,7 @@ async def handler(tele):
                             return
 
 
-@telebot.on(admin_cmd(pattern="gban(?: |$)(.*)"))
+@register(admin_cmd(pattern="gban(?: |$)(.*)"))
 async def gspider(rk):
     lazy = rk
     sender = await lazy.get_sender()
@@ -130,7 +130,7 @@ async def gspider(rk):
         if user.id == 719195224:
             return await rkp.edit("**Error! cant gban this user.**")
         try:
-            from telebot.plugins.sql_helper.gmute_sql import gmute
+            from userbot.modules.sql_helper.gmute_sql import gmute
         except BaseException:
             pass
         try:
@@ -161,7 +161,7 @@ async def gspider(rk):
     )
 
 
-@telebot.on(admin_cmd(pattern="ungban(?: |$)(.*)"))
+@register(admin_cmd(pattern="ungban(?: |$)(.*)"))
 async def gspider(rk):
     lazy = rk
     sender = await lazy.get_sender()
@@ -194,7 +194,7 @@ async def gspider(rk):
         if user.id == 719195224:
             return await rkp.edit(f"**Error! cant ungban this user.**")
         try:
-            from telebot.plugins.sql_helper.gmute_sql import ungmute
+            from userbot.modules.sql_helper.gmute_sql import ungmute
         except BaseException:
             pass
         try:

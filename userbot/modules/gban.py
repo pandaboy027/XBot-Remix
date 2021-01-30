@@ -67,11 +67,11 @@ async def get_user_from_id(user, event):
     return user_obj
 
 
-@register(ChatAction)
+@register(outgoing=True, pattern="^.gmute(?: |$)(.*)")
 async def handler(tele):
     if tele.user_joined or tele.user_added:
         try:
-            from telebot.plugins.sql_helper.gmute_sql import is_gmuted
+            from userbot.modules.sql_helper.gmute_sql import is_gmuted
 
             guser = await tele.get_user()
             gmuted = is_gmuted(guser.id)

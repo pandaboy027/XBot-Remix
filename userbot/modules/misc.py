@@ -124,6 +124,14 @@ async def repo_is_here(wannasee):
     )
 
 
+@register(outgoing=True, pattern="^.string$")
+async def string_is_here(wannasee):
+    """ For .string command, just returns the string URL. """
+    await wannasee.edit(
+        "╭========𖠄========╮🐨╭========𖠄========╮\n \n[┣━=━─[ PRESS LINK FOR GET STRING ]─━=━┫](https://repl.it/@ManusiaRakitan/stringsession#README.md) \n \n╰========𖠄======╯🐨╰========𖠄========╯\n     \n"
+    )
+
+
 @register(outgoing=True, pattern="^.raw$")
 async def raw(event):
     the_real_message = None

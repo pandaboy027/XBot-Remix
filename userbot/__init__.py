@@ -100,7 +100,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/X-Newbie/XBot-Remix.git")
+    "https://github.com/Camel07/XBot-Remix.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
     "UPSTREAM_REPO_BRANCH", "x-sql-extended")
 
@@ -399,7 +399,7 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Please Use Only With .help Command",
-                    text="{}\nTotal loaded Modules: {}\n               \n🖥 **Main Menu** 🖥\n".format(
+                    text="{}\nTotal loaded Modules: {}\n               \n🐨 **MODULE INFO KAMPANG** 🐨\n".format(
                         "🐨BOT KAMPANG🐨 modules helper",
                         len(dugmeler),
                     ),
@@ -423,7 +423,7 @@ with bot:
                                 "https://github.com/Camel07/XBot-Remix"),
                             custom.Button.url(
                                 "Support",
-                                "www.pornhub.com")],
+                                "https://t.me/mixiologist")],
                     ],
                     link_preview=False,
                 )

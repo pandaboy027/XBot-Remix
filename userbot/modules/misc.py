@@ -135,7 +135,7 @@ async def repo_is_here(wannasee):
 async def repo_is_here(wannasee):
     """ For .usergay command, just returns the repo URL. """
     await wannasee.edit(
-        "🐨 **Repo UsergayKampang:** [UsergayKamlang](https://github.com/Camel07/UsergayKampang-)"
+        "🐨 **Repo UsergayKampang:** [UsergayKamlang](https://github.com/Camel07/UsergayKampang)"
     )
 
 @register(outgoing=True, pattern="^.raw$")

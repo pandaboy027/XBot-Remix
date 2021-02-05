@@ -4,26 +4,23 @@
 
 ###### Searching and Downloading Google Images to the local disk ######
 
-import time  # Importing the time library to check the time of code execution
-import ssl
-import re
-import os
-import json
-import datetime
-import codecs
 import argparse
 
 # Import Libraries
+import codecs
+import datetime
+import http.client
+import json
+import os
+import re
+import ssl
 import sys
+import time  # Importing the time library to check the time of code execution
+import urllib.request
+from http.client import BadStatusLine, IncompleteRead
+from urllib.parse import quote
+from urllib.request import HTTPError, Request, URLError, urlopen
 
-version = (3, 1)
-cur_version = sys.version_info
-if cur_version >= version:  # If the Current Version of Python is 3.0 or above
-    import http.client
-    import urllib.request
-    from http.client import BadStatusLine, IncompleteRead
-    from urllib.parse import quote
-    from urllib.request import HTTPError, Request, URLError, urlopen
 
     http.client._MAXHEADERS = 1000
 else:  # If the Current Version of Python is 2.x

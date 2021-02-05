@@ -16,7 +16,7 @@ import argparse
 # Import Libraries
 import sys
 
-version = (3, 0)
+version = (3, 1)
 cur_version = sys.version_info
 if cur_version >= version:  # If the Current Version of Python is 3.0 or above
     import http.client

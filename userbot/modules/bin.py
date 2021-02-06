@@ -105,7 +105,7 @@ async def _(event):
 CMD_HELP.update({
     "binner":
     "`.bin`\
-\nUsage: Untuk Bin CC.\
+\nUsage: Untuk Bin CC.
 \n\n`.vbv`\
 \nUsage: Ngajak vcs asuuu."
 \n\n`.key`\

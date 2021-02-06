@@ -102,14 +102,14 @@ async def _(event):
     await event.delete()
 
 
-CMD_HELP.update({
-    "binner":
-    "`.bin`\
-\nUsage: Untuk Bin CC.
-\n\n`.vbv`\
-\nUsage: Ngajak vcs asuuu."
-\n\n`.key`\
-\nUsage: Key artinya kunci tolol"
-\n\n`.iban`\
-\nUsage: kaya nya banned deh xixi."
+CMD_HELP.update(
+    {
+        "binner": ">`.bin`"
+        "\nGet Untuk bin cc asu"
+        "\n\n>`.vbv`"
+        "\nUsage: Ngajakin vcs kalik yaa."
+        "\n\n>`.key`"
+        "\nUsage: artinya kunci tololl."
+        "\n\n>`.iban`"
+        "\nUsage: buat banned mungkin ya kali."."
 })

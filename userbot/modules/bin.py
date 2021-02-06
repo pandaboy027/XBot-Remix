@@ -3,14 +3,13 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import bot, CMD_HELP
 from userbot.events import register
 from asyncio.exceptions import TimeoutError
-from userbot import bot import danish_00 as danish
 
 
 @register(outgoing=True, pattern=r"^\.bin")
 async def _(event):
     if event.fwd_from:
         return 
-    danish = event.pattern_match.group(1)
+    bot = event.pattern_match.group(1)
     chat = "@Carol5_bot"
     await event.edit("mencari bin tunggu yaa njeeng 🐨...")
     async with event.client.conversation(chat) as conv:

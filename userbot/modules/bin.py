@@ -1,14 +1,12 @@
 
-# pata nhi sir 👀👀👀👀
-from telethon import functions, types, events
-from telethon.tl.functions.messages import DeleteHistoryRequest
-from userbot import bot as danish_00
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from telethon.tl.functions.account import UpdateNotifySettingsRequest
-from userbot.utils import admin_cmd as danishehe
 from userbot import bot, CMD_HELP
+from userbot.events import register
+from asyncio.exceptions import TimeoutError
+from userbot import bot import danish_00 as danish
 
-@danish_00.on(danishehe(pattern=r"^\.bin")
+
+@register(outgoing=True, pattern=r"^\.bin")
 async def _(event):
     if event.fwd_from:
         return 
@@ -31,7 +29,7 @@ async def _(event):
     await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
     await event.delete()
     
-@danish_00.on(danishehe(pattern=r"^\.vbv")
+@register(outgoing=True, pattern=r"^\.vbv")
 async def _(event):
     if event.fwd_from:
         return 
@@ -55,7 +53,7 @@ async def _(event):
     await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
     await event.delete()
     
-@danish_00.on(danishehe(pattern=r"^\.key")
+@register(outgoing=True, pattern=r"^\.key")
 async def _(event):
     if event.fwd_from:
         return 
@@ -78,7 +76,7 @@ async def _(event):
     await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
     await event.delete()
   
-@danish_00.on(danishehe(pattern=r"^\.iban")
+@register(outgoing=True, pattern=r"^\.iban")
 async def _(event):
     if event.fwd_from:
         return 

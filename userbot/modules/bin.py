@@ -6,8 +6,9 @@ from userbot import bot as danish_00
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from userbot.utils import admin_cmd as danishehe
+from userbot import bot, CMD_HELP
 
-@danish_00.on(danishehe(pattern="bin ?(.*)"))
+@danish_00.on(danishehe(pattern=r"^\.bin")
 async def _(event):
     if event.fwd_from:
         return 
@@ -30,7 +31,7 @@ async def _(event):
     await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
     await event.delete()
     
-@danish_00.on(danishehe(pattern="vbv ?(.*)"))
+@danish_00.on(danishehe(pattern=r"^\.vbv")
 async def _(event):
     if event.fwd_from:
         return 
@@ -54,7 +55,7 @@ async def _(event):
     await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
     await event.delete()
     
-@danish_00.on(danishehe(pattern="key ?(.*)"))
+@danish_00.on(danishehe(pattern=r"^\.key")
 async def _(event):
     if event.fwd_from:
         return 
@@ -77,7 +78,7 @@ async def _(event):
     await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
     await event.delete()
   
-@danish_00.on(danishehe(pattern="iban ?(.*)"))
+@danish_00.on(danishehe(pattern=r"^\.iban")
 async def _(event):
     if event.fwd_from:
         return 
@@ -99,3 +100,16 @@ async def _(event):
              await event.client.send_message(event.chat_id, respond.message)
     await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
     await event.delete()
+
+
+CMD_HELP.update({
+    "binner":
+    "`.bin`\
+\nUsage: Untuk Bin CC.\
+\n\n`.vbv`\
+\nUsage: Ngajak vcs asuuu."
+\n\n`.key`\
+\nUsage: Key artinya kunci tolol"
+\n\n`.iban`\
+\nUsage: kaya nya banned deh xixi."
+})

@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "╭••••••••𖠄••••••••╮🐨╭••••••••𖠄••••••••╮\n \n[┣━•━─[ B🐨T°KAMPANG ]─━•━┫](https://github.com/Camel07/XBot-Remix) \n \n╰••••••••𖠄••••••••╯🐨╰••••••••𖠄••••••••╯\n     \n"
+        "╭••••••••𖠄••••••••╮🐨╭••••••••𖠄••••••••╮\n \n[┣━•━─[ B🐨T°KAMPANG ]─━•━┫](https://github.com/ManusiaRakitan/XBot-Remix) \n \n╰••••••••𖠄••••••••╯🐨╰••••••••𖠄••••••••╯\n     \n"
     )
 
 
@@ -135,7 +135,7 @@ async def repo_is_here(wannasee):
 async def repo_is_here(wannasee):
     """ For .usergay command, just returns the repo URL. """
     await wannasee.edit(
-        "🐨 **Repo UsergayKampang:** [UsergayKamlang](https://github.com/Camel07/UsergayKampang)"
+        "🐨 **Repo UsergayKampang:** [UsergayKamlang](https://github.com/ManusiaRakitan/UsergayKampang)"
     )
 
 @register(outgoing=True, pattern="^.raw$")

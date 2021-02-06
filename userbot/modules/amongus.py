@@ -88,4 +88,4 @@ CMD_HELP.update(
     {
         "amongus": ".amongus\
     \nImpostor asu."
-    }
+    })

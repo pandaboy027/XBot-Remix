@@ -29,6 +29,6 @@ jobs:
           commit_message: 'pylint: auto fixes'
           commit_options: '--no-verify --signoff'
           repository: .
-          commit_user_name: Camel07
-          commit_user_email: zcamel07@gmail.com
-          commit_author: Camel07 <zcamel07@gmail.com>
+          commit_user_name: ManusiaRakitan
+          commit_user_email: zauharcamel@gmail.com
+          commit_author: ManusiaRakitan <zauharcamel@gmail.com>

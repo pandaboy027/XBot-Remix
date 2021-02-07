@@ -48,7 +48,7 @@ async def get_user_from_id(user, event):
 
 
 
-@Userbot(Userbot_on_cmd(pattern="ungban ?(.*)"))
+@Userbot(Userbot_on_cmd(pattern=".gban ?(.*)"))
 async def gspider(Userbot):
     sender = await lol.get_sender()
     me = await lol.client.get_me()
@@ -75,7 +75,7 @@ async def gspider(Userbot):
         if not reason:
             reason = "Private"
     except:
-        return await Freaky.edit(f"**Something W3NT Wrong 🤔**")
+        return await Userbot.edit(f"**Something W3NT Wrong 🤔**")
     if user:
         if user.id == 1228116248 or user.id == 1167145475:
             return await Userbot.edit(
@@ -115,7 +115,7 @@ async def gspider(Userbot):
     )
 
 
-@Userbot(Userbot_on_cmd(pattern="ungban ?(.*)"))
+@Userbot(Userbot_on_cmd(pattern=".ungban ?(.*)"))
 async def gspider(Userbot):
     lol = Userbot
     sender = await lol.get_sender()

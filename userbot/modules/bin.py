@@ -6,6 +6,7 @@ from telethon.tl.functions.messages import DeleteHistoryRequest
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from userbot.events import register
+from userbot import CMD_HELP
 
 @register(outgoing=True, pattern=".bin ?(.*)")
 async def _(event):
@@ -100,3 +101,17 @@ async def _(event):
     await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
     await event.delete()
              
+CMD_HELP.update(
+    {
+        "getmusic": ">`.bin`"
+        "\nUsage: Buat bin cc njing"
+        "\n\n>`.vbv`"
+        "\nUsage: Gatau dah vcs kali xixixi."
+        "\n\n>`.key`"
+        "\nUsage: Kunci kayanya gatau kunci surga mungkin."
+        "\n\n>`.iban`"
+        "\nUsage: biasa nya yang ada ban ban ny itu banned"
+        
+        
+    }
+)

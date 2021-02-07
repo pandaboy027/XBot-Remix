@@ -103,7 +103,7 @@ async def _(event):
              
 CMD_HELP.update(
     {
-        "getmusic": ">`.bin`"
+        "binner": ">`.bin`"
         "\nUsage: Buat bin cc njing"
         "\n\n>`.vbv`"
         "\nUsage: Gatau dah vcs kali xixixi."

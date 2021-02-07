@@ -3,7 +3,7 @@ from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from telethon.tl.types import MessageEntityMentionName
 
 from userbot import CMD_HELP
-from userbot.modules.sql import Userbot_on_cmd
+from userbot.type import Userbot_on_cmd
 
 
 async def get_full_user(event):

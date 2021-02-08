@@ -12,7 +12,7 @@ from telethon import events
 from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
-from telethon.events import ChatAction
+
 
 async def get_full_user(event):  
     args = event.pattern_match.group(1).split(':', 1)
@@ -189,11 +189,10 @@ async def gunben(userbot):
 
 
 
-@register(ChatAction)
-async def handler(rkG): 
-   if rkG.user_joined or rkG.user_added:      
-       try:       	
-         from userbot.modules.sql_helper.gmute_sql import is_gmuted
+@register(incoming=True)
+async def handler(rkG):
+    try:
+        from userbot.modules.sql_helper.gmute_sql import is_gmuted
          guser = await rkG.get_user()      
          gmuted = is_gmuted(guser.id)             
        except:      

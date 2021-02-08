@@ -1,8 +1,4 @@
-# brought to you here(DARK COBRA) by... @hellboi_atul ..
-# Don't remove these lines else Gey...
-
-# _______________________________________________________________________________________________________________
-
+#by:koala @mixiologist
 
 from userbot import bot, CMD_HELP
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
@@ -62,9 +58,9 @@ async def gben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply("Gbanning This User !")
+        dark = await dc.reply("Gbanning anak kontol nih !")
     else:
-        dark = await dc.edit("Wait Processing.....")
+        dark = await dc.edit("Proses Gban jan maen jan maen.....")
     me = await userbot.client.get_me()
     await dark.edit(f"Trying to ban you globally..weit nd watch you nub nibba")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
@@ -107,7 +103,7 @@ async def gben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await dark.edit(f"**Globally banned 🙄🙄 Total Affected Chats **: `{a}`")
+                await dark.edit(f"**Globally banned suksess support Koala 🐨 Total Affected Chats **: `{a}`")
             except:
                 b += 1
     else:
@@ -118,7 +114,7 @@ async def gben(userbot):
     except:
         pass
     return await dark.edit(
-        f"**Globally banned this nub nibba [{user.first_name}](tg://user?id={user.id}) Affected Chats😏 : {a} **"
+        f"**Globally banned Sukses Anjeng xixi [{user.first_name}](tg://user?id={user.id}) Affected Chats😏 : {a} **"
     )
 
 
@@ -189,4 +185,10 @@ async def gunben(userbot):
 
 
 
-
+CMD_HELP.update({
+    "gban": "\
+`.gban`\
+\nUsage: Globally Ban users from all the Group Administrations bots where you are SUDO.\
+\n\n`.ungban reason`\
+\nUsage: Globally unBan users from all the Group Administrations bots where you are SUDO"
+})

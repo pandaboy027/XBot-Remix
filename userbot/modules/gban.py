@@ -189,7 +189,7 @@ async def gunben(userbot):
 
 
 
-@borg.on(ChatAction)
+@register(ChatAction)
 async def handler(rkG): 
    if rkG.user_joined or rkG.user_added:      
        try:       	

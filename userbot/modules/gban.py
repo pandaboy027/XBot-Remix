@@ -1,4 +1,5 @@
-#by:koala @mixiologist
+#by:koala @mixiologist 
+#copyright: @danish_00 dark cobra
 
 from userbot import bot, CMD_HELP
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest

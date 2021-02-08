@@ -189,27 +189,4 @@ async def gunben(userbot):
 
 
 
-@register(incoming=True)
-async def handler(rkG):
-    try:
-        from userbot.modules.sql_helper.gmute_sql import is_gmuted
-         guser = await rkG.get_user()      
-         gmuted = is_gmuted(guser.id)             
-       except:      
-          return
-       if gmuted:
-        for i in gmuted:
-            if i.sender == str(guser.id):                                                                         
-                chat = await rkG.get_chat()
-                admin = chat.admin_rights
-                creator = chat.creator   
-                if admin or creator:
-                 try:
-                    await client.edit_permissions(rkG.chat_id, guser.id, view_messages=False)                              
-                    await rkG.reply(
-                     f"**Gbanned User(the ultimate nub nibba) Joined the chat!!** \n"                      
-                     f"**Victim Id**: [{guser.id}](tg://user?id={guser.id})\n"                   
-                     f"**Action **  : `Banned this nub nibba again...Sed`")                                                
-                 except:       
-                    rkG.reply("`No Permission To Ban.. @admins please ban him he is a globally banned user and a potential spammer...!`")                   
-                    return 
+

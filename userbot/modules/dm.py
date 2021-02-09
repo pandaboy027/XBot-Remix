@@ -9,15 +9,15 @@ from userbot import CMD_HELP
 @register(outgoing=True, pattern="^.dm(?: |$)(.*)")
 async def _(dc):
  
-    d = dc.pattern_match.group(1)
+     d = dc.pattern_match.group(1)
     
-    c = d.split(" ")#xixixi
+    c = d.split(" ")#hehe
 
     chat_id = c[0]
     try:  #dc hehe
         chat_id = int(chat_id)
-    #koala 🐨🐨🐨
-    except BaseException:#lerpelerpeler
+    #hmm 🤔🤔🤔🤔
+    except BaseException:#lalalala
         
         pass
   
@@ -25,15 +25,15 @@ async def _(dc):
     masg = await dc.get_reply_message() #ghanta😒😒
     if dc.reply_to_msg_id:
         await userbot.send_message(chat_id, masg)
-        await dc.edit("🐨Pesan Terkirim🐨")
+        await dc.edit("⚜️Message Delivered! Sar⚜️")
     for i in c[1:]:
-        msg += i + " "#impt by koala frm deviiluserbot 
-    if msg == "":#kontol
+        msg += i + " "#Fixed by @deviluserbot 
+    if msg == "":#hoho
         return
     try:
         await userbot.send_message(chat_id, msg)
-        await dc.edit("🐨Pesan Terkirim🐨")
-    except BaseException:#hilikintil💩💩
+        await dc.edit("⚜️Message Delivered!⚜️")
+    except BaseException:#hmmmmmmmmm🤔🤔
         await dc.edit(".dm (username) (text)")
 
 CMD_HELP.update({

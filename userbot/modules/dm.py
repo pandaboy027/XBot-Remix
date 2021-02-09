@@ -14,7 +14,7 @@ async def _(dc):
     
 
     
-        pass
+        
   
     msg = ""
     masg = await dc.get_reply_message() #ghanta😒😒

@@ -11,7 +11,7 @@ async def _(dc):
  
      d = dc.pattern_match.group(1)
     
-    c = d.split(" ")
+    
 
     chat_id = c[0]
     try:  #dc hehe

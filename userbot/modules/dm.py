@@ -16,7 +16,7 @@ async def _(dc):
     
         
   
-    msg = ""
+    
     masg = await dc.get_reply_message() #ghanta😒😒
     if dc.reply_to_msg_id:
         await userbot.send_message(chat_id, masg)

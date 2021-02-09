@@ -13,12 +13,7 @@ async def _(dc):
     
     
 
-    chat_id = c[0]
-    try:  #dc hehe
-        chat_id = int(chat_id)
-    #hmm 🤔🤔🤔🤔
-    except BaseException:#lalalala
-        
+    
         pass
   
     msg = ""

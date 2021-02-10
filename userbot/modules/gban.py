@@ -100,7 +100,7 @@ async def global_ban(event):
             f"` 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n\n"
                    "**Name: ** __{}__\n"
                    "**ID : ** `{}`\n"
-                   ).format(firstname, idd, firstname, idd)
+                   ).format(firstname, idd, firstname, idd
             
         )
     else:

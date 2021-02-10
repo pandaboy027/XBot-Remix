@@ -9,7 +9,6 @@ from telethon.errors import BadRequestError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import Channel, ChatBannedRights
 
-import userbot.modules.sql_helper.gban_sql_helper as gban_sql
 from userbot import BOTLOG, BOTLOG_CHATID
 from userbot.events import register
 from userbot.modules.admin import get_user_from_event

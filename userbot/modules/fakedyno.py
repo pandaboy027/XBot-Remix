@@ -16,7 +16,7 @@ from userbot.events import register
 
 
 
-@register(outgoing=True, pattern=r"^.usage(?: |$)")
+@register(outgoing=True, pattern=r"^.usange(?: |$)")
 async def dyno_usage(dyno):
     """
         Get your account Dyno Usage

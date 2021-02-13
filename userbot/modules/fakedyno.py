@@ -68,15 +68,6 @@ async def typewriter(typew):
 )
 # Owner @Si_Dian
 
-@register(outgoing=True, pattern='^.usange(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit("`Getting Information...`")
-    sleep(1)
-    await typew.edit("**Kampang Usage 🐨**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n" f"-> `Penggunaan Kealayan ` **koalabot**:\n" f" •**0 jam - " f"0 menit - 0%**" "\n ◐━─━─━─━─━──━─━─━─━─━◐\n" "-> `Sisa Alay Bulan Ini`:\n" f" •**9999 jam - 9999 menit " f"- 100%**\n" "╰━━━━━━━━━━━━━━━━━━━━╯"
-)
-# Owner @Si_Dian
 
 
 CMD_HELP.update({

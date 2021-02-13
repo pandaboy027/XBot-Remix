@@ -1,92 +1,89 @@
-import codecs
-import heroku3
-import aiohttp
-import math
-import os
-import requests
-import asyncio
-
-from userbot import (
-    HEROKU_APP_NAME,
-    HEROKU_API_KEY,
-    BOTLOG,
-    BOTLOG_CHATID,
-    CMD_HELP)
+from time import sleep
+from platform import uname
+from userbot import ALIVE_NAME, CMD_HELP, HEROKU_APP_NAME
 from userbot.events import register
 
+# ================= CONSTANT =================
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
+# ============================================
+
+@register(outgoing=True, pattern='^kntl(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**LU KONTOL**")
+    sleep(3)
+    await typew.edit("`KONTOL KONTOL KONTOL!!!`") 
+    sleep(3)
+    await typew.edit("`DASAR KEPALA KONTOL!!!`")
+# Owner @Si_Dian
+
+@register(outgoing=True, pattern='^G(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**JAKA SEMBUNG BAWA GOLOK**")
+    sleep(3)
+    await typew.edit("`NIMBRUNG GOBLOKK!!!`")
+# Owner @Si_Dian
 
 
-@register(outgoing=True, pattern=r"^.usange(?: |$)")
-async def dyno_usage(dyno):
-    """
-        Get your account Dyno Usage
-    """
-    await dyno.edit("`Getting Information...`")
-    useragent = (
-        'Mozilla/5.0 (Linux; Android 10; SM-G975F) '
-        'AppleWebKit/537.36 (KHTML, like Gecko) '
-        'Chrome/81.0.4044.117 Mobile Safari/537.36'
-    )
-    user_id = Heroku.account().id
-    headers = {
-        'User-Agent': useragent,
-        'Authorization': f'Bearer {HEROKU_API_KEY}',
-        'Accept': 'application/vnd.heroku+json; version=3.account-quotas',
-    }
-    path = "/accounts/" + user_id + "/actions/get-quota"
-    async with aiohttp.ClientSession() as session:
-        async with session.get(heroku_api + path, headers=headers) as r:
-            if r.status != 200:
-                await dyno.client.send_message(
-                    dyno.chat_id,
-                    f"`{r.reason}`",
-                    reply_to=dyno.id
-                )
-                await dyno.edit("`Can't get information...`")
-                return False
-            result = await r.json()
-            quota = result['account_quota']
-            quota_used = result['quota_used']
+@register(outgoing=True, pattern='^.g(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**JAKA SEMBUNG BAWA GOLOK**")
+    sleep(3)
+    await typew.edit("`NIMBRUNG GOBLOKK!!!`")
+# Owner @Si_Dian
 
-            """ - User Quota Limit and Used - """
-            remaining_quota = quota - quota_used
-            percentage = math.floor(remaining_quota / quota * 100)
-            minutes_remaining = remaining_quota / 60
-            hours = math.floor(minutes_remaining / 60)
-            minutes = math.floor(minutes_remaining % 60)
 
-            """ - User App Used Quota - """
-            Apps = result['apps']
-            for apps in Apps:
-                if apps.get('app_uuid') == app.id:
-                    AppQuotaUsed = apps.get('quota_used') / 60
-                    AppPercentage = math.floor(
-                        apps.get('quota_used') * 100 / quota)
-                    break
-            else:
-                AppQuotaUsed = 0
-                AppPercentage = 0
+@register(outgoing=True, pattern='^P(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**Hallo KIMAAKK SAYA {DEFAULTUSER}**")
+    sleep(2)
+    await typew.edit("`KONTOLLL.....`")
+# Owner @Si_Dian
 
-            AppHours = math.floor(AppQuotaUsed / 60)
-            AppMinutes = math.floor(AppQuotaUsed % 60)
 
-            await dyno.edit(
-                "**Kampang Usage 🐨**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n"
-                f"-> `Penggunaan Kealayan `  **{app.name}**:\n"
-                f"    •**0 jam - "
-                f"0 menit  -  0%**"
-                "\n ◐━─━─━─━─━──━─━─━─━─━◐\n"
-                "-> `Sisa Alay Bulan Ini`:\n"
-                f"    •**9999 jam - 9999 menit  "
-                f"-  0%**\n"
-                "╰━━━━━━━━━━━━━━━━━━━━╯"
-            )
-            await asyncio.sleep(20)
-            await dyno.delete()
-            return True
+@register(outgoing=True, pattern='^p(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit(f"**Hallo KIMAKK SAYA {DEFAULTUSER}**")
+    sleep(2)
+    await typew.edit("`KONTOLLL.....`")
+# Owner @Si_Dian
+
+
+@register(outgoing=True, pattern='^.usange(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("`Getting Information...`")
+    sleep(1)
+    await typew.edit(f"**Kampang Usage 🐨**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n" f"-> `Penggunaan Kealayan ` **{app.name}**:\n" f" •**0 jam - " f"0 menit - 0%**" "\n ◐━─━─━─━─━──━─━─━─━─━◐\n" "-> `Sisa Alay Bulan Ini`:\n" f" •**9999 jam - 9999 menit " f"- 100%**\n" "╰━━━━━━━━━━━━━━━━━━━━╯"
+)
+# Owner @Si_Dian
+
+
+@register(outgoing=True, pattern='^.usange(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("`Getting Information...`")
+    sleep(1)
+    await typew.edit(f"**Kampang Usage 🐨**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n" f"-> `Penggunaan Kealayan ` **{app.name}**:\n" f" •**0 jam - " f"0 menit - 0%**" "\n ◐━─━─━─━─━──━─━─━─━─━◐\n" "-> `Sisa Alay Bulan Ini`:\n" f" •**9999 jam - 9999 menit " f"- 100%**\n" "╰━━━━━━━━━━━━━━━━━━━━╯"
+)
+# Owner @Si_Dian
+
 
 CMD_HELP.update({
     "fakedyno":
-    "`.usange` [Fake Dyno]\
-\nUsage: Ini cuma tipu tipu anjing"
+    "`.usange`\
+\nUsage: tipu tipu anjeeeng.\
+\n\n`L`\
+\nUsage: Untuk Menjawab Salam."
 })

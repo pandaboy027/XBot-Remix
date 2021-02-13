@@ -1,6 +1,6 @@
 from time import sleep
 from platform import uname
-from userbot import ALIVE_NAME, CMD_HELP, HEROKU_APP_NAME
+from userbot import ALIVE_NAME, CMD_HELP
 from userbot.events import register
 
 # ================= CONSTANT =================
@@ -64,7 +64,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`Getting Information...`")
     sleep(1)
-    await typew.edit(f"**Kampang Usage 🐨**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n" f"-> `Penggunaan Kealayan ` **{app.name}**:\n" f" •**0 jam - " f"0 menit - 0%**" "\n ◐━─━─━─━─━──━─━─━─━─━◐\n" "-> `Sisa Alay Bulan Ini`:\n" f" •**9999 jam - 9999 menit " f"- 100%**\n" "╰━━━━━━━━━━━━━━━━━━━━╯"
+    await typew.edit(f"**Kampang Usage 🐨**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n" f"-> `Penggunaan Kealayan ` **koala**:\n" f" •**0 jam - " f"0 menit - 0%**" "\n ◐━─━─━─━─━──━─━─━─━─━◐\n" "-> `Sisa Alay Bulan Ini`:\n" f" •**9999 jam - 9999 menit " f"- 100%**\n" "╰━━━━━━━━━━━━━━━━━━━━╯"
 )
 # Owner @Si_Dian
 
@@ -75,7 +75,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`Getting Information...`")
     sleep(1)
-    await typew.edit(f"**Kampang Usage 🐨**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n" f"-> `Penggunaan Kealayan ` **{app.name}**:\n" f" •**0 jam - " f"0 menit - 0%**" "\n ◐━─━─━─━─━──━─━─━─━─━◐\n" "-> `Sisa Alay Bulan Ini`:\n" f" •**9999 jam - 9999 menit " f"- 100%**\n" "╰━━━━━━━━━━━━━━━━━━━━╯"
+    await typew.edit("**Kampang Usage 🐨**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n" f"-> `Penggunaan Kealayan ` **{app.name}**:\n" f" •**0 jam - " f"0 menit - 0%**" "\n ◐━─━─━─━─━──━─━─━─━─━◐\n" "-> `Sisa Alay Bulan Ini`:\n" f" •**9999 jam - 9999 menit " f"- 100%**\n" "╰━━━━━━━━━━━━━━━━━━━━╯"
 )
 # Owner @Si_Dian
 

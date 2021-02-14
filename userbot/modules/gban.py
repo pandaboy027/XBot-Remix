@@ -56,9 +56,9 @@ async def gben(userbot):
     if not sender.id == me.id:
         dark = await dc.reply("`Kamu Harus Di Global Banned, Karena Kamu Jamet!`")
     else:
-        dark = await dc.edit("`Global Banned Jamet Segera Di Proses`")
+        dark = await dc.edit("`✒ Global Banned Jamet Segera Di Proses`")
     me = await userbot.client.get_me()
-    await dark.edit(f"`Terdeteksi Jamet, Rasakan Dibanned Secara Global Karena Elu Jamet Kontol`")
+    await dark.edit(f"`✒ Terdeteksi Jamet, Rasakan Dibanned Secara Global Karena Elu Jamet Kontol`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -76,11 +76,11 @@ async def gben(userbot):
         if not reason:
             reason = "Private"
     except BaseException:
-        return await dark.edit(f"`Wah Ngebug Asu ヅ`")
+        return await dark.edit(f"`Wah Ngebug Asu 😂`")
     if user:
         if user.id == 1073848376:
             return await dark.edit(
-                f"`Elu Ga Bisa Gban Gua Asu, Karena Elu Jelek ヅ`"
+                f"`Elu Ga Bisa Gban Gua Asu, Karena Elu Jelek 😈`"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
@@ -99,7 +99,7 @@ async def gben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await dark.edit(f"`Global Banned Menyala Anjeeng 🐨`")
+                await dark.edit(f"`✒ Global Banned Menyala Anjeeng 🐨`")
             except BaseException:
                 b += 1
     else:
@@ -110,7 +110,7 @@ async def gben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**☠️ Nama Jamet:** `{ALIVE_NAME}`\n**🐨 Username:** [{user.first_name}](tg://user?id={user.id})\n**🐨 Punishment:** `Global Banned`"
+        f"**🐨 Baginda:** `{ALIVE_NAME}`\n**❂ Username:** [{user.first_name}](tg://user?id={user.id})\n**❂ Punishment:** `Global Banned`"
     )
 
 
@@ -120,9 +120,9 @@ async def gunben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply("`Mengampuni Jamet Tolol Yang Meresahkan`")
+        dark = await dc.reply("`✒ Mengampuni Jamet Tolol Yang Meresahkan`")
     else:
-        dark = await dc.edit("`Mencabut Hukuman Sedang Di Proses`")
+        dark = await dc.edit("`✒ Mencabut Hukuman Sedang Di Proses`")
     me = await userbot.client.get_me()
     await dark.edit(f"`Jamet Telah Di Ampuni, Lain Kali Gausah Sok Keras Ya KONTOLLL...`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
@@ -142,7 +142,7 @@ async def gunben(userbot):
         if not reason:
             reason = "Private"
     except BaseException:
-        return await dark.edit("`Syntax Ellol Anjeng ヅ`")
+        return await dark.edit("`Syntax Ellol Anjeng 🚫`")
     if user:
         if user.id == 1073848376:
             return await dark.edit("**Gua Kebal Asu, Makanya Ganteng KONTOLL...**")
@@ -163,7 +163,7 @@ async def gunben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, send_messages=True)
                 a += 1
-                await dark.edit(f"`Pengampunan Untuk Jamet... Please Wait... `")
+                await dark.edit(f"`✒ Pengampunan Untuk Jamet... Please Wait... `")
             except BaseException:
                 b += 1
     else:
@@ -174,14 +174,14 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**☠️ Nama Jamet:** `{ALIVE_NAME}`\n**🐨 Username:** [{user.first_name}](tg://user?id={user.id})\n**🐨 Pengampunan:** `Membatalkan Global Banned`"
+        f"**🐨 Baginda:** `{ALIVE_NAME}`\n**❂ Username:** [{user.first_name}](tg://user?id={user.id})\n**❂ Pengampunan:** `Membatalkan Global Banned`"
     )
 
 
 CMD_HELP.update({
     "gban": "\
 `.gban`\
-\nUsage: Melakukan Global Banned Untuk Jamet Tele Yang Mereshahkan.\
+\nUsage: ✒ Melakukan Global Banned Untuk Jamet Tele Yang Mereshahkan.\
 \n\n`.ungban`\
-\nUsage: Mengampuni Jamet"
+\nUsage: ✒ Mengampuni Jamet"
 })

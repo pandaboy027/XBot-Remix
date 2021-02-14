@@ -79,14 +79,14 @@ async def typewriter(typew):
 # Owner @Si_Dian
 
 
-@register(outgoing=True, pattern='^.g(?: |$)(.*)')
+@register(outgoing=True, pattern='^ass(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**JAKA SEMBUNG BAWA GOLOK**")
+    await typew.edit(f"**нαι αρα кαвαя ㋛**")
     sleep(3)
-    await typew.edit("`NIMBRUNG GOBLOKK!!!`")
-# Owner @Si_Dian
+    await typew.edit("`السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ`")
+# Owner @mixiologist
 
 
 @register(outgoing=True, pattern='^P(?: |$)(.*)')

@@ -241,7 +241,7 @@ async def amireallyalive(alive):
         f"•➣ **Vҽɾʂι Kαɱραɳɠ**\n   ➲ `{BOT_VER}` \n"
         f"•➣ **Mσԃυʅҽ**    \n   ➲ `{len(modules)}` \n\n"
         f"•➣ **Sυρρσɾƚ BY :** [KOALA 🐨](https://t.me/mixiologist")
-        f"**╚▣╩▣╩▣╩╣𝗡𝗚𝗘𝗡𝗧𝗢𝗧╠╩▣╩▣╩▣╝**")
+        f"**╚▣╩▣╩▣╩╣𝙉𝙂𝙀𝙉𝙏𝙊𝙏╠╩▣╩▣╩▣╝**")
         
     if ALIVE_LOGO:
         try: 

@@ -227,30 +227,28 @@ async def pipcheck(pip):
         await pip.edit("`Use .help pip to see an example`")
 
 
-@register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
+register(outgoing=True, pattern=r"^\.(?:alive|kon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
-    uptime = await get_readable_time((time.time() - StartTime))
+    await get_readable_time((time.time() - StartTime))
     output = (
-        f"ᭃ᭄ཱི►ʙᴏᴛ-ᴋᴀᴍᴘᴀɴɢ᭄ᭅᬷ◄᭄ᭅᬷ\n running on 👾 `{UPSTREAM_REPO_BRANCH}` 👾\n"
-        f"╭▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅╮\n"
-        f"┣[•🐨 `USER     :`{DEFAULTUSER}\n"
-        f"┣[ 🧿 `Username :`@{user.username}\n"
-        "`┣┈┅┈┅┈┅┈┅┈┅┈┈┅┈┅┈┅┈┅┈┅`\n"
-        f"┣[•🌐 `Telethon :`v {version.__version__} 🐨\n"
-        f"┣[•🐍 `Python   :`v {python_version()} 🐨\n"
-        f"┣[•💽 `Base on  :`{UPSTREAM_REPO_BRANCH}🐨\n"
-        f"┣[•⚔️ `Version  :`{BOT_VER} 🐨\n"
-        f"┣[•📖 `Modules  :`{len(modules)} Loaded🐨\n"
-        f"┣[•⏳ `Uptime   :`{uptime} 🐨\n"
-        f"╰▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅╯\n"
-        f" •MOD BY : `{DEFAULTUSER}`")
+        f"**╔▣╦▣╦▣╦╣🐨╠╦▣╦▣╦▣╗**\n"
+        f"    **☬ 𝐁𝐎𝐓 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 ☬** \n\n"
+        f"•➣ **ƙąɱ℘ąŋɠ**     \n   ➲ `{DEFAULTUSER}` \n"
+        f"•➣ **Uʂҽɾɳαɱҽ** \n   ➲ `@{user.username}` \n"
+        f"•➣ **Tҽɳɠҽɳƚσƚ** \n   ➲ `Versi {version.__version__}` \n"
+        f"•➣ **Pყƚԋσɳ**   \n   ➲ `Versi {python_version()}` \n"
+        f"•➣ **Vҽɾʂι Kαɱραɳɠ**\n   ➲ `{BOT_VER}` \n"
+        f"•➣ **Mσԃυʅҽ**    \n   ➲ `{len(modules)}` \n\n"
+        f"•➣ **Sυρρσɾƚ BY :** [KOALA 🐨](https://t.me/mixiologist")
+        f"•➣ **𝐑𝐄𝐏𝐎 :** [BOT KAMPANG](https:github.com/ManusiaRakitan/XBot-Remix.")
+        f"**╚▣╩▣╩▣╩╣𝗡𝗚𝗘𝗡𝗧𝗢𝗧╠╩▣╩▣╩▣╝**")
     if ALIVE_LOGO:
-        try:
+        try: 
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(100)
+            await asyncio.sleep(200)
             await msg.delete()
         except BaseException:
             await alive.edit(
@@ -263,6 +261,7 @@ async def amireallyalive(alive):
         await alive.edit(output)
         await asyncio.sleep(100)
         await alive.delete()
+
 
 
 @register(outgoing=True, pattern=r"^\.aliveu")

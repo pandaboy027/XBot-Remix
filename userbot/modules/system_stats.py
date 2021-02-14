@@ -240,7 +240,7 @@ async def amireallyalive(alive):
         f"•➣ **Pყƚԋσɳ**   \n   ➲ `Versi {python_version()}` \n"
         f"•➣ **Vҽɾʂι Kαɱραɳɠ**\n   ➲ `{BOT_VER}` \n"
         f"•➣ **Mσԃυʅҽ**    \n   ➲ `{len(modules)}` \n\n"
-        f"•➣ **Sυρρσɾƚ BY :** [BOT KAMPANG](https://github.com/ManusiaRakitan/XBot-Remix)\n☸ **Grup Official: **[Pencet Asu](t.me/caritemanhidop)\n❃ **ѕυρρσят ву:** [KOALA 🐨](t.me/mixiologist)\n"
+        f"•➣ **𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐃 :** [BOT KAMPANG](https://github.com/ManusiaRakitan/XBot-Remix)\n🐨 **Grup Official: **[Pencet Asu](t.me/caritemanhidop)\n☬ **ѕυρρσят ву:** [KOALA 🐨](t.me/mixiologist)\n"
         f"**╚▣╩▣╩▣╩╣𝐍𝐆𝐄𝐍𝐓𝐎𝐓╠╩▣╩▣╩▣╝**")
         
     if ALIVE_LOGO:
